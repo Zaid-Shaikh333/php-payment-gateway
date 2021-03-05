@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: -webkit-linear-gradient(right,white,white);
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.product-form{
+	position: relative;
+	width: 576px;
+	margin: auto;
+}
+.product-form form{
+	margin: 1rem;
+	box-sizing: border-box;
+	box-shadow: 0 0 3px 1px;
+	border-radius: .4rem;
+	margin-top: 20%;
+	padding-bottom: 1.5rem; 
+}
+.product-form h3{
+	font-family: sans-serif;
+	font-style: italic;
+	font-size: 2rem;
+	padding: 1rem 0;
+	text-align: center;
+}
+.form-group{
+	margin: 0.5rem;
+	padding: 0.5rem;
+}
+.form-group i{
+	font-size: 1.2rem;
+	margin: .5rem;
+}
+.form-group input{
+	text-align: center;
+	float: right;
+	width: 75%;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	outline: none;
+	border-bottom: 2.5px solid #5453eb;
+}
+.form-group textarea{
+	resize: none;
+	float: right;
+	width: 75%;
+	text-align: center;
+	outline: none;
+	border: 2px solid #5453eb;
+}
+.add-button{
+	padding-top: 1rem;
+    text-align: center;
+}
+.add-button button{
+    outline: none;
+    background: #1a18e3;
+    font-size: 1.2rem;
+    border-radius: 7.5px;
+    color: #fff;
+    border: none;
+    width: 4.8rem;
+    transition: 0.5s;
+}
+.add-button button:hover{
+	opacity: 0.5;
+}
+.add-button a{
+	text-decoration: none;
+	color: white;
+}
+.product-navbar {
+  width: 100%;
+  background-color: #5453eb;
+  overflow: auto;
+  justify-content: space-around;
+  position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 1.5rem 0;
+}
+
+/* Navbar links */
+.product-navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: .5s;
+}
+
+/* Navbar links on mouse-over */
+.product-navbar a:hover {
+  background-color: white;
+  color: #5453eb;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .product-navbar a {
+    float: none;
+    display: block;
+  }
+}
